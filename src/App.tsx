@@ -1,4 +1,4 @@
-import { useState, onClick, Fragment } from 'react'
+import { useState, Fragment } from 'react'
 import './App.css'
 
 
