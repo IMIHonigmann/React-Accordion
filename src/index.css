@@ -1,4 +1,6 @@
 :root {
+  --animation-timer: 0.2s;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -33,6 +35,18 @@ a:hover {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: var(--animation-timer) ease-in-out;
+  transform: translateX(0px);
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: var(--animation-timer) ease-in-out;
 }
 
 button {
